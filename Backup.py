@@ -19,19 +19,15 @@ screen_list = ["0", "1", "2", "3", "4", "5", "6"]
 
 class Paint2D:
   def first_image(self):
-    num = 0
-    for i in range(0, 8):
-      screen_list[num][6] = green_block
-      num += 1
-    #screen_list[0] = [brick_block, brick_block, brick_block, "  ", green_block, green_block, ""]
+    screen_list[0] = [brick_block, brick_block, brick_block, "  ", green_block, green_block, green_block]
     
     
-    #screen_list[1] = [brick_block,blue_block, brick_block, "  ", green_block, green_block, ""]
-    #screen_list[2] = [brick_block, brick_block, brick_block, "  ", "  ", brown_block, ""]
-    #screen_list[3] = [green_block, green_block, green_block, green_block, green_block, green_block, ""]
-    #screen_list[4] = ["  ", "  ", "  ", "  ", "  ", "  ", "  "]
-    #screen_list[5] = ["  ", "  ", "  ", "  ", "  ", "  ", "  "]
-    #screen_list[6] = ["  ", "  ", "  ", "  ", "  ", "  ", "  "]
+    screen_list[1] = [brick_block,blue_block, brick_block, "  ", green_block, green_block, green_block]
+    screen_list[2] = [brick_block, brick_block, brick_block, "  ", "  ", brown_block, green_block]
+    screen_list[3] = [green_block, green_block, green_block, green_block, green_block, green_block, green_block]
+    screen_list[4] = ["  ", "  ", "  ", "  ", "  ", "  ", "  "]
+    screen_list[5] = ["  ", "  ", "  ", "  ", "  ", "  ", "  "]
+    screen_list[6] = ["  ", "  ", "  ", "  ", "  ", "  ", "  "]
   def do_the_tutorial(self):
     print("When your are done whith the tutorial you will be a pro on this so let's start!",end="")
     input()
